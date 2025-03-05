@@ -9,7 +9,6 @@ import sendEmail from './src/Helpers/NodeMailer.js';
 // import i18n from 'i18n';
 import cookieParser from 'cookie-parser';
 import { requestAllSites } from "./src/Helpers/Automation.js";
-import bot, { listenTgCommands, sendTgMessage } from "./src/Helpers/TelegramBot.js";
 import TelegramBot from 'node-telegram-bot-api';
 
 
@@ -25,7 +24,6 @@ const to = process.env.CRON_MAIL_USER;
 const app = express();
 const port = process.env.PR_PORT || 3000;
 
-bot.on('message', listenTgCommands);
 
 app.set('view engine', 'ejs');
 app.set('views', './src/Views');
