@@ -11,7 +11,7 @@ const ViewController = {
             title: 'Ana Səhifə',
             body: "Home/NewHome.ejs",
             // body: "Home/Index.ejs",
-            js: "Home.js"
+            js: null
         };
         res.render('Main', view);
     },
