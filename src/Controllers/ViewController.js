@@ -23,11 +23,11 @@ const ViewController = {
         };
         res.render('Main', view);
     },
-    jobs: async (req, res) => {
+    sales: async (req, res) => {
         const view = {
             title: 'Vakansiyalar',
-            body: "Jobs/Index.ejs",
-            js: "Jobs.js"
+            body: "Sale/List.ejs",
+            js: null
         };
         res.render('Main', view);
     },
