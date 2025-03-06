@@ -23,9 +23,17 @@ const ViewController = {
         };
         res.render('Main', view);
     },
-    sales: async (req, res) => {
+    motorcycles: async (req, res) => {
         const view = {
-            title: 'Vakansiyalar',
+            title: 'Motorcycles',
+            body: "Sale/List.ejs",
+            js: null
+        };
+        res.render('Main', view);
+    },
+    skooters: async (req, res) => {
+        const view = {
+            title: 'Skooters',
             body: "Sale/List.ejs",
             js: null
         };

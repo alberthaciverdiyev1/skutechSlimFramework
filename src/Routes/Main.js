@@ -15,7 +15,8 @@ const router = express.Router();
 //Load Views
 router.get('/', viewController.home);
 router.get('/auth', viewController.auth);
-router.get('/sales', viewController.sales);
+router.get('/motorcycles', viewController.motorcycles);
+router.get('/skooters', viewController.skooters);
 // router.get('/sales', visitorLogger, viewController.sales);
 router.get('/about-us', visitorLogger, viewController.aboutUs);
 router.get('/contact', visitorLogger, viewController.contactUs);
