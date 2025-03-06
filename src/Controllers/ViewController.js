@@ -39,6 +39,14 @@ const ViewController = {
         };
         res.render('Main', view);
     },
+    details: async (req, res) => {
+        const view = {
+            title: 'Skooters',
+            body: "Sale/Details.ejs",
+            js: null
+        };
+        res.render('Main', view);
+    },
     aboutUs: async (req, res) => {
         const view = {
             title: 'Haqqımızda',
