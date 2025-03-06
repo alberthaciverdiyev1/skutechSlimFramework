@@ -1,43 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
 <%- include('../Partials/Head') %>
-
-<body class="dark:bg-gray-100">
+<body>
 <main>
-    <section class="md:h-screen py-36 flex items-center justify-center relative overflow-hidden zoom-image">
-        <div class="absolute inset-0 image-wrap z-1 bg-[url('/Images/bg/01.jpg')] bg-no-repeat bg-center bg-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black z-2" id="particles-snow"></div>
-        <div class="container-fluid relative z-3">
-            <div class="grid grid-cols-1">
-                <div class="flex flex-col min-h-screen justify-center md:px-10 py-10 px-4">
-                    <div class="text-center">
-                        <a href="index-2.html"><img src="/Images/logo-icon-64.png" class="mx-auto" alt=""></a>
-                    </div>
-                    <div class="title-heading text-center my-auto">
-                        <h1 class="text-white mt-3 mb-6 md:text-5xl text-3xl font-bold">Tezliklə Skutech xidmətinizdə!</h1>
-                        <p class="text-white/70 text-lg max-w-xl mx-auto">
+    <section class="md:h-screen flex items-center relative overflow-hidden">
+        <!-- image-wrap -->
+        <div class="absolute inset-0 z-1 bg-[url('/Images/bg/08.png')] bg-no-repeat bg-center bg-cover"></div>
 
-                            Motosiklet, velosiped və skuter həvəskarları üçün yeni elan platforması! Sürətli elan yerləşdirmə, ağıllı axtarış sistemi və premium imkanlarla ehtiyac duyduğunuzu asanlıqla tapacaqsız</p>
-                        <div id="countdown">
-                            <ul class="count-down list-none inline-block text-white text-center mt-8 m-6">
-                                <li id="days" class="count-number inline-block m-2">10</li>
-                                <li id="hours" class="count-number inline-block m-2">20</li>
-                                <li id="mins" class="count-number inline-block m-2">30</li>
-                                <li id="secs" class="count-number inline-block m-2">40</li>
-                                <li id="end" class="h1"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <p class="mb-0 text-slate-400">© <script>document.write(new Date().getFullYear())</script> Hously. Design & Develop with <i class="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
-                    </div>
-                </div>
-            </div><!--end grid-->
-        </div><!--end container-->
-    </section><!--end section -->
+        <div class="w-1/2 min-h-screen flex items-center justify-center md:pl-10 py-10 px-4 relative z-3">
+            <div class="text-left">
+                <h1 class="text-white mt-3 mb-6 md:text-5xl text-3xl font-bold">
+                    Tezliklə Skutech xidmətinizdə!
+                </h1>
+                <p class="text-white/70 text-lg max-w-xl">
+                    Motosiklet, velosiped və skuter həvəskarları üçün yeni elan platforması!
+                    Sürətli elan yerləşdirmə, ağıllı axtarış sistemi və premium imkanlarla ehtiyac duyduğunuzu asanlıqla tapacaqsız.
+                </p>
+            </div>
+        </div>
+
+        <!-- Alt metin (Copyright) ortada hizalanmış -->
+        <div class="absolute bottom-10 left-1/4 transform -translate-x-1/2 z-3 text-center">
+            <p class="text-slate-400">© <script>document.write(new Date().getFullYear())</script> Skutech.az</p>
+        </div>
+    </section>
+
 </main>
-
-
 </body>
 </html>
