@@ -15,6 +15,9 @@ const ViewController = {
         };
         res.render('Main', view);
     },
+    comingSoon: async (req, res) => {
+        res.render('AboutUs/ComingSoon.ejs');
+    },
     auth: async (req, res) => {
         const view = {
             title: 'Auth',

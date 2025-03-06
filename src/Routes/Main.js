@@ -13,7 +13,8 @@ import visitorLogger from "../Middlewares/Visitors.js";
 const router = express.Router();
 
 //Load Views
-router.get('/', viewController.home);
+// router.get('/', viewController.home);
+router.get('/',viewController.comingSoon)
 router.get('/auth', viewController.auth);
 router.get('/motorcycles', viewController.motorcycles);
 router.get('/skooters', viewController.skooters);

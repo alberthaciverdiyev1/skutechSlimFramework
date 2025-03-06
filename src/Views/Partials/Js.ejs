@@ -1,53 +1,29 @@
 <% if (typeof js !== "undefined" && js) { %>
     <script type="module" src="/Js/<%= js %>"></script>
 <% } %>
-    <!-- JAVASCRIPTS -->
- <script src="Js/libs/tiny-slider/min/tiny-slider.js"></script>
- <script src="Js/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
- <script src="Js/libs/tobii/js/tobii.min.js"></script>
- <script src="Js/libs/choices.js/public/assets/scripts/choices.min.js"></script>
- <script src="Js/libs/swiper/js/swiper.min.js"></script>
- <script src="Js/js/easy_background.js"></script>
- <script src="Js/libs/feather-icons/feather.min.js"></script>
- <script src="Js/js/plugins.init.js"></script>
- <script src="Js/js/app.js"></script>
-<style>
- .active_nav{
-  position: fixed !important;
-  left:0;
-  top:0;
-  right: 0;
-  z-index: 1;
-  animation-name: fadeInUp;
-  animation-duration: .4s;
-  background-color: white !important;
- }
- @keyframes fadeInUp {
-  from {
-   opacity: 0;
-   top: -50px;
-  }
-
-  to {
-   opacity: 1;
-   top: 0;
-  }
- }
-</style>
+<!-- JAVASCRIPTS -->
+<script src="Js/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="Js/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
+<script src="Js/libs/tobii/js/tobii.min.js"></script>
+<script src="Js/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="Js/libs/swiper/js/swiper.min.js"></script>
+<script src="Js/js/easy_background.js"></script>
+<script src="Js/libs/feather-icons/feather.min.js"></script>
+<script src="Js/js/plugins.init.js"></script>
+<script src="Js/js/app.js"></script>
 <script>
- var navfix=document.querySelector(".header_mid");
+    var navfix = document.querySelector(".header_mid");
 
- window.addEventListener("scroll",()=>{
-  if(window.scrollY>100){
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
 
-   navfix.classList.add("active_nav")
-  }
-  else{
-   navfix.classList.remove("active_nav")
-  }
- })
+            navfix.classList.add("active_nav")
+        } else {
+            navfix.classList.remove("active_nav")
+        }
+    })
 </script>
- <!-- JAVASCRIPTS -->
+<!-- JAVASCRIPTS -->
 
 
 
